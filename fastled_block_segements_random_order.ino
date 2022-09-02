@@ -90,4 +90,3 @@ void setAll(byte red, byte green, byte blue) {
   }
   showStrip();
 }
-// END FASTLED
