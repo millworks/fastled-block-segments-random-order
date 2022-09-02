@@ -12,7 +12,7 @@ int start;
 int fin;
 int state;
 int last_state;
-int pot_read;
+// int pot_read;
 const int pos_num = 16;
 int pos_array[pos_num];
 
@@ -37,11 +37,11 @@ void blocks(int rd, int gn, int bl) {
     }
     showStrip();
     // escape/change function with pot (optional)
-    pot_read = analogRead(A0);
-    state = map(pot_read, 0, 1023, 1, 10);
-    if (state != last_state) {
-      return;
-    }
+    // pot_read = analogRead(A0);
+    // state = map(pot_read, 0, 1023, 1, 10);
+    // if (state != last_state) {
+    //   return;
+    // }
     delay(750);
   }
 }
